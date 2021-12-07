@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogActivity">
+    tools:context=".LogActivity"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidLine"
@@ -28,28 +29,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/UserName"
+        android:textColorHint="@color/black"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/imageView"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"/>
 
     <EditText
         android:id="@+id/passWord"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/PassWord"
+        android:textColorHint="@color/black"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@id/userName"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"/>
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_500"
+        android:backgroundTint="#00BCD4"
         app:layout_constraintTop_toBottomOf="@id/passWord"
         android:text="@string/Login"
         android:layout_marginTop="8dp"
@@ -61,6 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/i_accept_terms"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/buttonLogin"
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"/>
@@ -70,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/forget_Password"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/userName"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="16dp"/>

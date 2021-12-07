@@ -5,5 +5,10 @@
     <string name="Login">Login</string>
     <string name="i_accept_terms">i accept Terms and Conditions</string>
     <string name="forget_Password">Forget Password</string>
+    <string name="Home">Home</string>
+    <string name="LogOut">LogOut</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
 
 </resources>
