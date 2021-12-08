@@ -1,5 +1,6 @@
 package com.example.week6d1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -8,12 +9,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
     private var textViewEmail:TextView?=null
     private var drawerLayout:DrawerLayout?=null
     private var toolBarView:Toolbar?=null
+    private var navView:NavigationView?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +32,14 @@ class MainActivity : AppCompatActivity() {
         textViewEmail?.text=email
 
         setUpDrawer()
+        updatEmailHeader(email!!)
+        drawerClicks()
+
+    }
+    private fun updatEmailHeader(email:String){
+        val headerView=navView?.getHeaderView(0)
+        val textViewEmail=headerView?.findViewById<TextView>(R.id.tvEmail)
+        textViewEmail?.text=email
 
     }
     private fun setUpDrawer(){
@@ -53,6 +64,25 @@ class MainActivity : AppCompatActivity() {
         textViewEmail=findViewById(R.id.tvEmail)
         drawerLayout=findViewById(R.id.drawer)
         toolBarView=findViewById(R.id.toolBar)
+        navView=findViewById(R.id.navView)
     }
+private fun drawerClicks(){
+    navView?.setNavigationItemSelectedListener {
+        when(it.itemId){
+            R.id.home->{
+                drawerLayout?.closeDrawer(GravityCompat.START)
+                true
+            }
+            R.id.logOut->{
+                finish()
+                val i=Intent(this,LogActivity::class.java)
+                startActivity(i)
+                true
+            }
+            else->true
+        }
 
+
+    }
+}
 }
