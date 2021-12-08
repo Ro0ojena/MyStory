@@ -9,6 +9,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     private var drawerLayout:DrawerLayout?=null
     private var toolBarView:Toolbar?=null
     private var navView:NavigationView?=null
+    private  var recyclerView:RecyclerView?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,6 +67,7 @@ class MainActivity : AppCompatActivity() {
         drawerLayout=findViewById(R.id.drawer)
         toolBarView=findViewById(R.id.toolBar)
         navView=findViewById(R.id.navView)
+        recyclerView=findViewById(R.id.storyRecycleView)
     }
 private fun drawerClicks(){
     navView?.setNavigationItemSelectedListener {
