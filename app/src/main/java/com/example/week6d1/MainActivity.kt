@@ -109,9 +109,10 @@ private fun drawerClicks(){
         /*another way of making title,sub,description adding
        (add to string then get it from it (better))*/
 
-        storiesArray.add(Story("Second story","this is subtitle","I will show you how I learn"))
+        storiesArray.add(Story("Second Story","this is subtitle","I will show you how I learn"))
 
         storiesArray.add(Story("Third story","this is subtitle","I will show you how I learn"))
+
 
         val customAdapter=CustomAdapter(storiesArray,this)
         recyclerView?.adapter= customAdapter

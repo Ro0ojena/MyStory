@@ -13,6 +13,9 @@
     <string name="this_is_firstTitle">First Story</string>
     <string name="this_is_firstDescription">First Description</string>
     <string name="this_is_firstSubtiltle">First subtitle</string>
+    <string name="this_is_SecondTiltle">Second subtitle</string>
+    <string name="this_is_SecondSubtiltle">Second subtitle</string>
+    <string name="this_is_SecondDiscription">Second subtitle</string>
 
 
 </resources>
