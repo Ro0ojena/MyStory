@@ -10,12 +10,23 @@
     <string name="open">open</string>
     <string name="close">close</string>
 
-    <string name="this_is_firstTitle">First Story</string>
-    <string name="this_is_firstDescription">First Description</string>
+    <string name="this_is_firstTitle">First Story </string>
+    <string name="this_is_firstDescription">First Description ilearn kotlin First Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlinFirst Description ilearn kotlin ilove Kotlin... </string>
     <string name="this_is_firstSubtiltle">First subtitle</string>
     <string name="this_is_SecondTiltle">Second subtitle</string>
     <string name="this_is_SecondSubtiltle">Second subtitle</string>
-    <string name="this_is_SecondDiscription">Second subtitle</string>
+    <string name="this_is_SecondDiscription">Second description ilearn kotlin Second description ilearn kotlinSecond description ilearn kotlinSecond description ilearn kotlin </string>
+
+    <string name="this_is_thirdTiltle">Third Title</string>
+    <string name="this_is_thirdSubTiltle">Third SubTitle</string>
+    <string name="this_is_thirdDescription">Third Description</string>
+
+    <string name="icon_language">English</string>
+
+    <string name="add_story">Add Story</string>
+    <string name="Enter_titleHere">Enter Title Here </string>
+    <string name="Enter_SubTitleHere">Enter Subtitle Here </string>
+    <string name="add_description">Add Description </string>
 
 
 </resources>

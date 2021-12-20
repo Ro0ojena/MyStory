@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">قصتي</string>
+    <string name="UserName">اسم المستخدم</string>
+    <string name="PassWord">كلمة المرور</string>
+    <string name="Login">الدخول</string>
+    <string name="i_accept_terms">أنا موافق على سياسة البرنامج وشروطه</string>
+    <string name="forget_Password">نسيت كلمة المرور؟</string>
+    <string name="Home">الصفحة الرئيسية</string>
+    <string name="LogOut">الخروج</string>
+    <string name="open">فتح</string>
+    <string name="close">اغلاق</string>
+    <string name="this_is_firstTitle">أولاً...</string>
+    <string name="this_is_firstDescription">قصتي...</string>
+    <string name="this_is_firstSubtiltle">"بدايتي مع لغة كوتلن... "</string>
+    <string name="this_is_SecondTiltle">ثانياً...</string>
+    <string name="this_is_SecondDiscription">الوصف ...</string>
+    <string name="this_is_SecondSubtiltle">"التسجيل في معكسر كوتلن عن بعد  "</string>
+    <string name="this_is_thirdTiltle">ثالثاً...</string>
+    <string name="this_is_thirdSubTiltle">"التحديات التي واجهتها خلال المعسكر "</string>
+    <string name="this_is_thirdDescription">"أنا أحب لغة كوتلن                                       أنا أحب لغة كوتلن                                  "</string>
+    <string name="icon_language">"العربية "</string>
+    <string name="add_story">اضافة قصة</string>
+    <string name="Enter_titleHere">أدخل العنوان هنا</string>
+    <string name="Enter_SubTitleHere">أدخل العنوان الفرعي هنا</string>
+    <string name="add_description">"أضف القصة "</string>
+</resources>

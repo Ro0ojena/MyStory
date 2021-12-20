@@ -12,6 +12,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
+import java.lang.RuntimeException
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,12 +37,18 @@ class MainActivity : AppCompatActivity() {
         textViewEmail?.text=email
 
         setUpDrawer()
-        updatEmailHeader(email!!)
+        try {
+            updatEmailHeader(email!!)
+        }catch (e:RuntimeException){
+            "error"
+        }
         drawerClicks()
         openAddStoryActivity()
         displayStories()
 
     }
+
+
     private fun updatEmailHeader(email:String){
         val headerView=navView?.getHeaderView(0)
         val textViewEmail=headerView?.findViewById<TextView>(R.id.tvEmail)
@@ -109,13 +116,27 @@ private fun drawerClicks(){
         /*another way of making title,sub,description adding
        (add to string then get it from it (better))*/
 
-        storiesArray.add(Story("Second Story","this is subtitle","I will show you how I learn"))
 
-        storiesArray.add(Story("Third story","this is subtitle","I will show you how I learn"))
+        storiesArray.add(Story(getString(R.string.this_is_SecondTiltle),getString(R.string.this_is_SecondSubtiltle),getString(R.string.this_is_SecondDiscription)))
+        storiesArray.add(Story(getString(R.string.this_is_thirdTiltle),getString(R.string.this_is_thirdSubTiltle),getString(R.string.this_is_thirdDescription)))
+
+       /* storiesArray.add(Story("Second Story","this is subtitle","I will show you how I learn I will show you how I learn I will show you how I learn"))
+
+        storiesArray.add(Story("Third story","this is subtitle","I will show you how I learn"))*/
 
 
         val customAdapter=CustomAdapter(storiesArray,this)
         recyclerView?.adapter= customAdapter
+
+        if (intent.getStringExtra("title")!=null){
+            val title=intent.getStringExtra("title")
+            val subTitle=intent.getStringExtra("subTitle")
+            val desc=intent.getStringExtra("desc")
+
+            val newStory=Story(title!!,subTitle!!,desc!!)
+            storiesArray.add(newStory)
+            customAdapter.notifyDataSetChanged()
+        }
 
     }
 }
